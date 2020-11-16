@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Message;
+use Illuminate\Support\Facades\Storage;
 
 class MessageApiController extends Controller
 {
@@ -36,7 +37,7 @@ class MessageApiController extends Controller
      */
     public function store(Request $request)
     {
-        $path = "../storage/app/";
+        $path = "../storage/app/public/";
         $blacklist = "https://front-test-pg.herokuapp.com/blacklist?phone=";
 
         if($request->file('file_message')->isValid())
@@ -54,6 +55,7 @@ class MessageApiController extends Controller
             }
 
             $messages = file("{$path}{$upload}");
+
             $l = 0;
             $enviadas = 0;
             foreach($messages as $linha){
@@ -102,6 +104,7 @@ class MessageApiController extends Controller
                 }
 
                 $this->blockade_msg = array();
+                $l++;
             }
         }
         var_dump('===== apenas enviadas =====');
