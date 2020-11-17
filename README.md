@@ -7,7 +7,48 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+
+Esta aplicação foi desenvolvida:
+
+- Framwork Laravel, muito conhecido no mercado.
+- BD Mysql
+- Sistema Operaciona Windows
+- IDE VSCODE
+- Composer
+- Postman
+- GuzzleHttp
+
+
+Senhores para iniciar a  Aplicação basta rodar:
+
+1. Instalar xampp ou wampp com php 7 e ou superior, em resumo vc deve ter instalado em cua maquina o PHP
+
+2. Instalar composer
+
+3. Instalar postman
+
+4. Va para a paste que deseja instalar o projeto, e execute:
+    3.1. clonar o projeto: git clone https://github.com/paulosergiobp69/api-message.git
+
+5. Apos instalar o composer e clonar o projeto, executar na pasta, ex: 
+    C:\sua_pasta\api-message> composer install
+
+6. Criar o banco de dados: pgmaisbd, no gerenciador existente no xampp ou wampp do mysql.
+
+7. Execute as migrations, para criar a estrutura de BR necessarias para o projeto.
+    C:\sua_pasta\api-message>>php artisan migrate
+
+8. Para maiores detalhes para o teste procure o arquivo: teste aplicacao.docx no diretorio raiz do projeto, la vc encontrará com maiores detalhes a forma de testes com postman e os detalhes da configuração.
+
+
+
+
+Obs: Foi desenvolvido um prototipo CRUD: pois iria avancar mais no projeto mas infelizmente devido ao tempo nao foi possivel.
+     Saliento que esta aplicação foi desenvolvida em 12 horas.
+
+==========================================
 ## About Laravel
+
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
